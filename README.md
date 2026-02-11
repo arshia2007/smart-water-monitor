@@ -1,6 +1,6 @@
 # Smart Water Monitoring System
 
-An IoT-based water consumption monitoring system using:
+An IoT-based water usage monitoring system built using:
 
 - ESP32
 - Water Flow Sensor
@@ -9,7 +9,10 @@ An IoT-based water consumption monitoring system using:
 
 ## Features
 - Real-time flow rate monitoring
-- Historical data storage
-- Monthly & yearly analytics
-- Cost estimation
-- Usage alerts
+- Total water consumption tracking
+- Monthly and yearly statistics
+
+## Project Structure
+
+- firmware/ → ESP32 code
+- mobile-app/ → Flutter app
