@@ -16,3 +16,9 @@ An IoT-based water usage monitoring system built using:
 
 - firmware/ → ESP32 code
 - mobile-app/ → Flutter app
+
+## Current Status
+
+✅ ESP32 connected to Firebase
+✅ Secure authentication working
+✅ Realtime data upload functional
