@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'portal_dashboard.dart';
+import 'screens/login_screen.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: const FirebaseOptions(
+      apiKey: "AIzaSyBrpuch3sxF_GqEzfQ4X-f1kVCj5yc0nKg",
+      authDomain: "smart-water-monitor-b06bf.firebaseapp.com",
+      databaseURL:
+          "https://smart-water-monitor-b06bf-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "smart-water-monitor-b06bf",
+      storageBucket: "smart-water-monitor-b06bf.appspot.com",
+      messagingSenderId: "964615158368",
+      appId: "1:964615158368:web:f1efa0428d0b9e61672105",
+    ),
+  );
+
+  runApp(const WaterFlowApp());
+}
+
+class WaterFlowApp extends StatelessWidget {
+  const WaterFlowApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const LoginScreen(),
+    );
+  }
+}
